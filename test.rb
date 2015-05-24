@@ -1,9 +1,8 @@
-def factorial(n)
-	if n == 0
-		1
-	else
-		n * factorial(n-1)
+class Car
+	def charthit
+		"Just what I needed \n" * 3
 	end
 end
 
-puts factorial(3)
+radio = Car.new
+puts radio.charthit

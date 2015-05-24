@@ -1,11 +1,5 @@
-a = "abc"
-b = "abc"
+a = [5, 4, 3, 2, 1, 0]
 
-puts a.object_id
-puts b.object_id
-
-c = a.to_sym
-d = b.to_sym
-
-puts c.object_id
-puts d.object_id
+for b in a
+	puts b == 0? "Blast off" : b
+end

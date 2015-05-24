@@ -1,4 +1,5 @@
-a = "hi"
+a = "Cars"
 
-puts a.swapcase
-puts a.clear.empty?
+a.each_char do |c|
+	puts "#{c} has ASCII code %d\n" % c.ord
+end

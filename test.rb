@@ -1,11 +1,11 @@
-for x in (1..3)
-	puts x
-end
+a = "abc"
+b = "abc"
 
-for x in (1...3)
-	puts x
-end
+puts a.object_id
+puts b.object_id
 
-for x in ("b".."f")
-	puts x
-end
+c = a.to_sym
+d = b.to_sym
+
+puts c.object_id
+puts d.object_id

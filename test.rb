@@ -1,11 +1,9 @@
-a = {1 => "one", 2 => "two", 3 => "three" }
-
-
-def run(b)
-	b.each {
-		|k,v|
-		puts "#{k} is #{v}"
-	}
+def factorial(n)
+	if n == 0
+		1
+	else
+		n * factorial(n-1)
+	end
 end
 
-run(a)
+puts factorial(3)

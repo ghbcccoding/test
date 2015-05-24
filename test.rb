@@ -1,5 +1,11 @@
-a = [5, 4, 3, 2, 1, 0]
+a = {1 => "one", 2 => "two", 3 => "three" }
 
-for b in a
-	puts b == 0? "Blast off" : b
+
+def run(b)
+	b.each {
+		|k,v|
+		puts "#{k} is #{v}"
+	}
 end
+
+run(a)

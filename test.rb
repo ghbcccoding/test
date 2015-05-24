@@ -1,5 +1,4 @@
-a = "Cars"
+a = 1
 
-a.each_char do |c|
-	puts "#{c} has ASCII code %d\n" % c.ord
-end
+puts "This is version with %d\n" % a
+puts "This is string version #{a.to_s}"

@@ -19,4 +19,9 @@ end
 robin = Bird.new("Robin")
 cardinal = Bird.new("Cardinal")
 tweety = Bird.new("Tweety")
-puts "#{tweety.name} sees #{tweety.how_many_other_birds.to_s} other birds"
+birdlist = [robin, cardinal, tweety]
+
+birdlist.each {
+	|n|
+	puts "#{n.name} sees #{n.how_many_other_birds.to_s} other birds"
+}

@@ -1,8 +1,4 @@
-class Car
-	def charthit
-		"Just what I needed \n" * 3
-	end
-end
+a = "hi"
 
-radio = Car.new
-puts radio.charthit
+puts a.swapcase
+puts a.clear.empty?
